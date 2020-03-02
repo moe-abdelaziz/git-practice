@@ -22,6 +22,35 @@ A branch is a ref(erence) to a commit. When HEAD points to a branch, we say we'r
 HEAS is ref(erence) to the "current" branch or sometimes commit. Git commands like 'status', 'log', and 'branch' use HEAD
 'git checkout' updates HEAD to ref(er)
 
+## What's a git diff?
+NAME
+       git-diff - Show changes between commits, commit and working tree, etc
+
+SYNOPSIS
+       git diff [<options>] [<commit>] [--] [<path>...]
+       git diff [<options>] --cached [<commit>] [--] [<path>...]
+       git diff [<options>] <commit> <commit> [--] [<path>...]
+       git diff [<options>] <blob> <blob>
+       git diff [<options>] --no-index [--] <path> <path>
+
+DESCRIPTION
+       Show changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees,
+       changes between two blob objects, or changes between two files on disk.
+
+       git diff [<options>] [--] [<path>...]
+           This form is to view the changes you made relative to the index (staging area for the next commit). In other words, the
+           differences are what you could tell Git to further add to the index but you still haven't. You can stage these changes by using
+           git-add(1).
+
+       git diff [<options>] --no-index [--] <path> <path>
+           This form is to compare the given two paths on the filesystem. You can omit the --no-index option when running the command in a
+           working tree controlled by Git and at least one of the paths points outside the working tree, or when running the command
+           outside a working tree controlled by Git.
+
+       git diff [<options>] --cached [<commit>] [--] [<path>...]
+           This form is to view the changes you staged for the next commit relative to the named <commit>. Typically you would want
+
+
 ## Commit messages
 
 Default editor is vim
