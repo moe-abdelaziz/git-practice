@@ -10,3 +10,13 @@
 - git status: Compare working directory, staging area and current branch
 - git add: Add changes from working directory to staging area
 - git config: Set or get configuration
+
+## Commit messages
+
+Default editor is vim
+ - 'i' to enter "insert" mode
+ - Type commit message
+ - 'esc' then wq
+ - First line should be clear, accurate, and concise
+ - User proper spelling, grammar, and punctuation
+ - Dont end with a '.'
