@@ -17,6 +17,7 @@
 - git remote -v: list remote repos
 - git push -u <remote> <branch>: Push <branch> to <remote>, and set default upstream for <branch>
 - git fetch: fetch changes from remote repo
+- git pull: fetch and then pull
 
 ## What's a branch?
 A branch is a ref(erence) to a commit. When HEAD points to a branch, we say we're "on" that branch. When we make a commit while we're on a branch, the branch is updted to ref(er) to the new commit.
@@ -52,6 +53,12 @@ DESCRIPTION
 
        git diff [<options>] --cached [<commit>] [--] [<path>...]
            This form is to view the changes you staged for the next commit relative to the named <commit>. Typically you would want
+
+
+## What's a remote?
+A remote repo is one hosted somewhere other than our local machine. We can add remotes with 'git remote add', and set up "Tracking Branches" to track difference between our local and remote repos.
+
+we push to remotes with 'git push' and fetch from them with 'git fetch' we can alsofetch and merge in one set with 'git pull'
 
 
 ## Commit messages
