@@ -14,6 +14,8 @@
 - git stash: stash changes f
 - git statsh list: list stashes
 - git statsh pop: apply statshed changes to working directory
+- git remote -v: list remote repos
+- git push -u <remote> <branch>: Push <branch> to <remote>, and set default upstream for <branch>
 
 ## What's a branch?
 A branch is a ref(erence) to a commit. When HEAD points to a branch, we say we're "on" that branch. When we make a commit while we're on a branch, the branch is updted to ref(er) to the new commit.
