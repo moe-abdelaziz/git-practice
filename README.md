@@ -18,6 +18,7 @@
 - git push -u <remote> <branch>: Push <branch> to <remote>, and set default upstream for <branch>
 - git fetch: fetch changes from remote repo
 - git pull: fetch and then pull
+- git merge: merge things from different branches
 
 ## What's a branch?
 A branch is a ref(erence) to a commit. When HEAD points to a branch, we say we're "on" that branch. When we make a commit while we're on a branch, the branch is updted to ref(er) to the new commit.
